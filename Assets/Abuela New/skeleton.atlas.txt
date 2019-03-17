@@ -1,0 +1,167 @@
+
+skeleton.png
+size: 1024,256
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+abuelita/abuela_img/abuelita_0000_fleco
+  rotate: true
+  xy: 95, 8
+  size: 102, 66
+  orig: 102, 66
+  offset: 0, 0
+  index: -1
+abuelita/abuela_img/abuelita_0001_lente-2
+  rotate: false
+  xy: 857, 217
+  size: 41, 37
+  orig: 41, 37
+  offset: 0, 0
+  index: -1
+abuelita/abuela_img/abuelita_0002_lente-1
+  rotate: false
+  xy: 778, 192
+  size: 57, 37
+  orig: 57, 37
+  offset: 0, 0
+  index: -1
+abuelita/abuela_img/abuelita_0003_cara
+  rotate: false
+  xy: 2, 5
+  size: 91, 105
+  orig: 91, 105
+  offset: 0, 0
+  index: -1
+abuelita/abuela_img/abuelita_0004_pelo
+  rotate: false
+  xy: 2, 112
+  size: 159, 142
+  orig: 159, 142
+  offset: 0, 0
+  index: -1
+abuelita/abuela_img/abuelita_0005_brazo1
+  rotate: true
+  xy: 680, 179
+  size: 75, 96
+  orig: 75, 96
+  offset: 0, 0
+  index: -1
+abuelita/abuela_img/abuelita_0006_mano1
+  rotate: false
+  xy: 293, 19
+  size: 37, 45
+  orig: 37, 45
+  offset: 0, 0
+  index: -1
+abuelita/abuela_img/abuelita_0007_campera1
+  rotate: true
+  xy: 349, 191
+  size: 63, 123
+  orig: 63, 123
+  offset: 0, 0
+  index: -1
+abuelita/abuela_img/abuelita_0008_campera2
+  rotate: false
+  xy: 267, 6
+  size: 24, 105
+  orig: 24, 105
+  offset: 0, 0
+  index: -1
+abuelita/abuela_img/abuelita_0009_torso
+  rotate: true
+  xy: 474, 191
+  size: 63, 104
+  orig: 63, 104
+  offset: 0, 0
+  index: -1
+abuelita/abuela_img/abuelita_0010_brazo2
+  rotate: false
+  xy: 580, 170
+  size: 98, 84
+  orig: 98, 84
+  offset: 0, 0
+  index: -1
+abuelita/abuela_img/abuelita_0011_mano2
+  rotate: false
+  xy: 293, 66
+  size: 44, 42
+  orig: 44, 42
+  offset: 0, 0
+  index: -1
+abuelita/abuela_img/abuelita_0012_baston
+  rotate: true
+  xy: 163, 113
+  size: 34, 142
+  orig: 34, 142
+  offset: 0, 0
+  index: -1
+abuelita/abuela_img/abuelita_0013_pantufla1
+  rotate: false
+  xy: 349, 166
+  size: 77, 23
+  orig: 77, 23
+  offset: 0, 0
+  index: -1
+abuelita/abuela_img/abuelita_0014_pierna1
+  rotate: false
+  xy: 163, 2
+  size: 50, 109
+  orig: 50, 109
+  offset: 0, 0
+  index: -1
+abuelita/abuela_img/abuelita_0015_pantufla-2-
+  rotate: false
+  xy: 778, 231
+  size: 77, 23
+  orig: 77, 23
+  offset: 0, 0
+  index: -1
+abuelita/abuela_img/abuelita_0016_pierna2
+  rotate: false
+  xy: 215, 2
+  size: 50, 109
+  orig: 50, 109
+  offset: 0, 0
+  index: -1
+abuelita/abuela_img/caramuerte
+  rotate: false
+  xy: 163, 149
+  size: 91, 105
+  orig: 91, 105
+  offset: 0, 0
+  index: -1
+abuelita/abuela_img/carawin
+  rotate: false
+  xy: 256, 149
+  size: 91, 105
+  orig: 91, 105
+  offset: 0, 0
+  index: -1
+abuelita/abuela_img/ojomuerte1
+  rotate: false
+  xy: 428, 152
+  size: 57, 37
+  orig: 57, 37
+  offset: 0, 0
+  index: -1
+abuelita/abuela_img/ojomuerte2
+  rotate: false
+  xy: 900, 217
+  size: 41, 37
+  orig: 41, 37
+  offset: 0, 0
+  index: -1
+abuelita/abuela_img/ojowin1
+  rotate: false
+  xy: 487, 152
+  size: 57, 37
+  orig: 57, 37
+  offset: 0, 0
+  index: -1
+abuelita/abuela_img/ojowin2
+  rotate: false
+  xy: 307, 110
+  size: 41, 37
+  orig: 41, 37
+  offset: 0, 0
+  index: -1

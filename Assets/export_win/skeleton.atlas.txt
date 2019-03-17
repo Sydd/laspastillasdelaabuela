@@ -1,0 +1,97 @@
+
+skeleton.png
+size: 2048,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+win_img/banner
+  rotate: false
+  xy: 1284, 47
+  size: 568, 262
+  orig: 568, 262
+  offset: 0, 0
+  index: -1
+win_img/botella
+  rotate: false
+  xy: 977, 169
+  size: 33, 121
+  orig: 33, 121
+  offset: 0, 0
+  index: -1
+win_img/copa
+  rotate: false
+  xy: 1854, 88
+  size: 29, 56
+  orig: 29, 56
+  offset: 0, 0
+  index: -1
+win_img/copa atras
+  rotate: false
+  xy: 1952, 253
+  size: 29, 56
+  orig: 29, 56
+  offset: 0, 0
+  index: -1
+win_img/fondo
+  rotate: false
+  xy: 2, 292
+  size: 1280, 720
+  orig: 1280, 720
+  offset: 0, 0
+  index: -1
+win_img/luz
+  rotate: false
+  xy: 1284, 311
+  size: 699, 701
+  orig: 699, 701
+  offset: 0, 0
+  index: -1
+win_img/mesa
+  rotate: false
+  xy: 2, 156
+  size: 973, 134
+  orig: 973, 134
+  offset: 0, 0
+  index: -1
+win_img/pavo
+  rotate: true
+  xy: 1854, 146
+  size: 163, 96
+  orig: 163, 96
+  offset: 0, 0
+  index: -1
+win_img/plato
+  rotate: false
+  xy: 289, 139
+  size: 85, 15
+  orig: 85, 15
+  offset: 0, 0
+  index: -1
+win_img/plato atras
+  rotate: true
+  xy: 1985, 801
+  size: 84, 16
+  orig: 84, 16
+  offset: 0, 0
+  index: -1
+win_img/rusa
+  rotate: true
+  xy: 1985, 887
+  size: 125, 61
+  orig: 125, 61
+  offset: 0, 0
+  index: -1
+win_img/virgencitaquerida
+  rotate: false
+  xy: 2, 2
+  size: 45, 71
+  orig: 45, 71
+  offset: 0, 0
+  index: -1
+win_img/youwin
+  rotate: false
+  xy: 2, 75
+  size: 285, 79
+  orig: 285, 79
+  offset: 0, 0
+  index: -1

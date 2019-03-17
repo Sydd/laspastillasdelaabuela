@@ -1,0 +1,34 @@
+
+skeleton.png
+size: 2048,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+dead/fantasma
+  rotate: false
+  xy: 1284, 144
+  size: 176, 361
+  orig: 176, 361
+  offset: 0, 0
+  index: -1
+dead/fondodead
+  rotate: false
+  xy: 2, 107
+  size: 1280, 720
+  orig: 1280, 720
+  offset: 0, 0
+  index: -1
+dead/glow
+  rotate: false
+  xy: 1284, 507
+  size: 320, 320
+  orig: 320, 320
+  offset: 0, 0
+  index: -1
+dead/grandmadied
+  rotate: false
+  xy: 2, 2
+  size: 524, 103
+  orig: 524, 103
+  offset: 0, 0
+  index: -1
