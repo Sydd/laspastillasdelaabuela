@@ -7,7 +7,7 @@ using Spine.Unity;
 
 public class Abuela : MonoBehaviour {
 
-	public int treeshold = 0 ;
+	public float velToRotate = 0.1f ;
 	public float speed = 1.0f;
 
 	public SkeletonAnimation Anims;
@@ -22,39 +22,96 @@ public class Abuela : MonoBehaviour {
 	public AbuelaStates ActualState;
 
 	public float Memory = 1.0f;
-
+	public float animVelocity;
 	public Rigidbody2D cuerpo;
-	//public Animator anim;
 
-	bool isFliped;
+	bool gateado;
 	Vector2 force;
 	// Use this for initialization
 	void Start () {
 		playing = true;
+
 		ActualState = AbuelaStates.idle;
+//
 	}
 	float elapsedTime = 1.0f;
 	void FixedUpdate()
 	{
 		if (playing){
 
-		if (elapsedTime < 0) {
-				life = life - dificult;
-				Memory = Memory - dificult * 5f;
+			if (elapsedTime < 0) {
+				
+				if (gateado)
+				{
+					life = life - dificult *4 ;
+				} else{
+					life = life - dificult;
+				}
+					
+				Memory = Memory - dificult * 3f;
 
 				elapsedTime = 1.0f; 	
-		}
+			}
 
-		elapsedTime = elapsedTime - Time.fixedDeltaTime;
+			elapsedTime = elapsedTime - Time.fixedDeltaTime;
 
+			
+			if (force != Vector2.zero){
 
-		lifebar.value = life;
+				ChangeState(AbuelaStates.walk);
+			
+				//Debug.Log(force.magnitude.ToString());
+
+				//Anims.timeScale = force.magnitude;
+
+				if (GameMaster.Instance.Inverse){
+					
+					//force = force * -1.0f;
+					
+					cuerpo.MovePosition(cuerpo.position + force * speed * -1.0f);			
+
+					if (Mathf.Abs(force.x) > velToRotate){
+
+						if (force.x < velToRotate){
+
+							Anims.Skeleton.ScaleX = 1;
+
+						} else if (force.x > velToRotate * -1){
+						
+							Anims.Skeleton.ScaleX = -1;
+						}		
+					}
+				
+				}else{
+					
+					cuerpo.MovePosition(cuerpo.position + force * speed);			
+
+					if (Mathf.Abs(force.x) > velToRotate){
+
+						if (force.x < velToRotate){
+
+							Anims.Skeleton.ScaleX = -1;
+
+						} else if (force.x > velToRotate * -1){
+						
+							Anims.Skeleton.ScaleX = 1;
+						}
+					}
+				}
+
+			} else {
+
+				ChangeState(AbuelaStates.idle);
+			}
+
+			lifebar.value = life;
 
 			if (life < 0){
 				GameMaster.Instance.lose = true;
 				Die();
 			}
-		}
+
+			}
 		
 	}
 	// Update is called once per frame
@@ -64,31 +121,21 @@ public class Abuela : MonoBehaviour {
 		if (playing){
 
 				force = new Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"));
-
-				if (force != Vector2.zero){
-
-					ChangeState(AbuelaStates.walk);
-					
-					if (cuerpo.velocity.x <= 0){
-						Anims.gameObject.transform.localScale = new Vector3(-0.6f,0.6f,1);
-					} else{
-						isFliped = true;
-						Anims.gameObject.transform.localScale = new Vector3(0.6f,0.6f,1);
-					}
-					if (GameMaster.Instance.Inverse){
-						force = force *-1;
-					}
-					cuerpo.velocity = force * speed * Time.deltaTime;
-		//			anim.SetBool("MOVIMIENTO", true);
-				} else{
-					cuerpo.velocity = Vector2.zero;
-					ChangeState(AbuelaStates.idle);
-		//			anim.SetBool("MOVIMIENTO", false);
-				}
 			}
 	 }
 
+	public void Gateado(){
+		lifebar.fillRect.GetComponent<Image>().color = Color.red;
+		gateado = true;
+		Debug.Log("Gateado");
+	}	
+	public void Desgatedo(){
+		lifebar.fillRect.GetComponent<Image>().color = Color.white;
+		gateado = false;
+		Debug.Log("desGateado");
+	}
 	public void Die(){
+
 		playing = false;
 		ChangeState(AbuelaStates.death,false);
 		speed = 0;
@@ -106,10 +153,23 @@ public class Abuela : MonoBehaviour {
 		if (ActualState != state){
 		
 			ActualState = state;
+			if (ActualState == AbuelaStates.walk){
+				//Anims.timeScale = animVelocity;
+			} else {
+				//Anims.timeScale = 1.0f;
+			}
 
 			Anims.AnimationState.SetAnimation(0,state.ToString(),true);
 
 		}
+	}
+
+	public void Mareo(){
+		Anims.AnimationState.SetAnimation(1,AbuelaStates.mareo.ToString(),true);
+	}
+
+	public void DesMareo(){
+		Anims.AnimationState.SetEmptyAnimation(1,.2f);
 	}
 
 	void ChangeState(AbuelaStates state,bool loop){

@@ -11,7 +11,8 @@ public class Room : MonoBehaviour {
 	public GameObject objects;
 	public bool starterRoom = false;
 	public Transform Spawn;
-
+	public GameObject cat;
+	public bool catRoom = false;
 	void Start()
 	{
 		if (objects == null){
@@ -38,6 +39,9 @@ public class Room : MonoBehaviour {
 		activated = false;
 		House.sortingOrder = 0;
 		objects.SetActive(false);
+		if (catRoom){
+			cat.GetComponent<Cat>().Deactivate();
+		}
 	}
 
 	public void Activate(){
@@ -45,6 +49,9 @@ public class Room : MonoBehaviour {
 		House.sortingOrder = 1;
 		activated = true;
 		objects.SetActive(true);
+		if (catRoom){
+			cat.GetComponent<Cat>().Activate();
+		}
 
 	}
 }

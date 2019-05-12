@@ -6,5 +6,6 @@ public enum AbuelaStates {
 	idle,
 	walk,
 	death,
+	mareo,
 	win
 }

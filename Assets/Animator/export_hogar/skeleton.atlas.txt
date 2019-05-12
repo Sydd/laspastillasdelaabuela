@@ -1,0 +1,34 @@
+
+skeleton.png
+size: 1024,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+hogar_img/base hoguera
+  rotate: false
+  xy: 617, 241
+  size: 191, 260
+  orig: 191, 260
+  offset: 0, 0
+  index: -1
+hogar_img/fuego
+  rotate: false
+  xy: 2, 2
+  size: 54, 123
+  orig: 54, 123
+  offset: 0, 0
+  index: -1
+hogar_img/glow
+  rotate: false
+  xy: 295, 181
+  size: 320, 320
+  orig: 320, 320
+  offset: 0, 0
+  index: -1
+hogar_img/hoguera arriba
+  rotate: false
+  xy: 2, 127
+  size: 291, 374
+  orig: 291, 374
+  offset: 0, 0
+  index: -1

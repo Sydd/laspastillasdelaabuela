@@ -1,0 +1,34 @@
+
+skeleton.png
+size: 1024,256
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+gato_img/cabeza
+  rotate: false
+  xy: 419, 83
+  size: 222, 167
+  orig: 222, 167
+  offset: 0, 0
+  index: -1
+gato_img/cola
+  rotate: false
+  xy: 2, 2
+  size: 187, 248
+  orig: 187, 248
+  offset: 0, 0
+  index: -1
+gato_img/pata
+  rotate: true
+  xy: 191, 14
+  size: 36, 100
+  orig: 36, 100
+  offset: 0, 0
+  index: -1
+gato_img/torso
+  rotate: false
+  xy: 191, 52
+  size: 226, 198
+  orig: 226, 198
+  offset: 0, 0
+  index: -1

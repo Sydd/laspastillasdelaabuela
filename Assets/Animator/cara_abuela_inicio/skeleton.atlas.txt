@@ -1,0 +1,55 @@
+
+skeleton.png
+size: 2048,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+brillo
+  rotate: false
+  xy: 558, 48
+  size: 88, 100
+  orig: 88, 100
+  offset: 0, 0
+  index: -1
+cara_tv
+  rotate: false
+  xy: 558, 150
+  size: 315, 345
+  orig: 315, 345
+  offset: 0, 0
+  index: -1
+cuerpo_tv
+  rotate: false
+  xy: 875, 328
+  size: 432, 167
+  orig: 432, 167
+  offset: 0, 0
+  index: -1
+flequillo
+  rotate: false
+  xy: 875, 110
+  size: 360, 216
+  orig: 360, 216
+  offset: 0, 0
+  index: -1
+iris_tv
+  rotate: false
+  xy: 1647, 424
+  size: 71, 71
+  orig: 71, 71
+  offset: 0, 0
+  index: -1
+lentes_tv
+  rotate: false
+  xy: 1309, 369
+  size: 336, 126
+  orig: 336, 126
+  offset: 0, 0
+  index: -1
+pelo_tv
+  rotate: false
+  xy: 2, 2
+  size: 554, 493
+  orig: 554, 493
+  offset: 0, 0
+  index: -1

@@ -7,7 +7,7 @@ public class Memory : MonoBehaviour {
 	public Abuela player;
 	public Transform reference;
 	public float factor = 3f;
-	 public float limit =3f;
+	 public float limit =6f;
 
 	 public Animator anim;
 	 public SpriteRenderer sprite;

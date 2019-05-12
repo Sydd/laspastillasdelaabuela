@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: 6c63011733b6a044f85cb28593d5373f
+timeCreated: 1557588252
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: George Harrison &  Friends
+  fontNames:
+  - George Harrison &  Friends
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

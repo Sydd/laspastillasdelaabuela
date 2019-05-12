@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameMaster : MonoBehaviour {
 
@@ -43,6 +44,9 @@ public class GameMaster : MonoBehaviour {
 	{
 		instance = this;
 	}
+	public void Restart(){
+			SceneManager.LoadScene(0);
+	}
 	void Start(){
 
 		if (debugMode)
@@ -62,20 +66,20 @@ public class GameMaster : MonoBehaviour {
 
 	public void ChangeRoom(Room toChange){
 		
-		//Actualroom.Desactivate();
+		Actualroom.Desactivate();
 		
-		Actualroom.gameObject.SetActive(false);
+		//.gameObject.SetActive(false);
 		
 		Actualroom = toChange;
-		
-		Actualroom.gameObject.SetActive(true);
 		
 		Actualroom.Activate();
 		switch(Actualroom.typeRoom){
 				case 0:
 					Inverse = false;
+					player.DesMareo();
 					break;
 				case 1:
+					player.Mareo();
 					Inverse = true;
 					break;
 		}
